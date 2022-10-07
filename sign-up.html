@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==== favicon ==== -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- ==== Font Awesome Library Icons ==== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ==== Bootstrap Library ==== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ==== login Stylesheet ==== -->
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <section id="signUp" class="sign-up w-100 py-5 position-relative">
+      <div class="container text-center py-5 px-5 rounded-4">
+        <div class="welcome-image w-75 m-auto">
+          <img
+            src="images/welcome.svg"
+            class="w-50 py-4"
+            alt="Join the world's largest community"
+            title="Join the world's largest community"
+          />
+        </div>
+        <div class="sign-in-form w-75 mx-auto">
+          <div class="d-flex flex-column">
+            <div class="w-100 first-name">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First name"
+                aria-label="First name"
+              />
+            </div>
+            <p
+              class="hint fisrt-name-hint m-0 mt-2 text-start p-2 mb-2 rounded-2 invisible"
+            >
+              <i class="fa-solid fa-triangle-exclamation pe-2"></i>
+              First Name should be one word more than 3 characters
+            </p>
+            <div class="w-100 last-name">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Last name"
+                aria-label="Last name"
+              />
+            </div>
+            <p
+              class="hint last-name-hint m-0 my-2 text-start p-2 rounded-2 invisible"
+            >
+              <i class="fa-solid fa-triangle-exclamation pe-2"></i>
+              Last Name should be one word more than 3 characters
+            </p>
+          </div>
+          <div class="login-inputs d-flex">
+            <div class="email w-100 me-3">
+              <div class="email-hint w-100">
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="form-control p-2"
+                />
+              </div>
+              <p
+                class="hint email-hint m-0 mt-2 text-start p-2 rounded-2 invisible"
+              >
+                <i class="fa-solid fa-triangle-exclamation pe-2"></i>
+                Invalid email address
+              </p>
+            </div>
+            <div class="new-password w-100">
+              <div class="password-input w-100 position-relative">
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  class="form-control p-2"
+                />
+                <i
+                  class="show-hide-password fa-solid fa-eye position-absolute top-50 translate-middle-y d-none"
+                ></i>
+              </div>
+              <p
+                class="hint password-hint m-0 mt-2 text-start p-2 rounded-2 invisible"
+              >
+                <i class="fa-solid fa-triangle-exclamation pe-2"></i>
+                Password must contain at least 8 characters
+              </p>
+            </div>
+          </div>
+          <div
+            class="signin-buttons py-4 d-flex flex-column w-50 mx-auto gap-4"
+          >
+            <button class="btn btn-new-account rounded-2 py-2" id="registerBtn">
+              Create New Account
+            </button>
+            <button class="btn btn-sign-in rounded-2 py-2" id="haveAccount">
+              Already Have Account ?
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="login-success position-absolute d-flex justify-content-center align-items-center d-none"
+      >
+        <div class="box bg-white rounded-4 p-3 w-40 text-center">
+          <img
+            src="images/success.svg"
+            alt="Registeration success"
+            class="w-75 py-3"
+          />
+          <p>Congratulation, Your account has been successfully created.</p>
+          <button class="btn btn-sign-in">Login in</button>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Bootstrap Js Bundle ===== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ===== Main Js File ===== -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

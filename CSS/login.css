@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* =======> Variables */
+:root {
+  --main-black: #000;
+  --main-blusih-black: #3f3d56;
+  --main-blue: #120091;
+  --main-dark-green: #043730;
+  --main-light-green: #3c6761;
+  --main-orange: #ee5b47;
+  --main-cyan: #1da1f2;
+  --main-gray: #6c707b;
+}
+
+/* =======> Global Rules */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e4e0da;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::selection {
+  color: #f1f1f1;
+  background-color: var(--main-blusih-black);
+}
+/* =======> Reusable classes */
+.w-40 {
+  width: 40%;
+}
+/* =======> Login Page */
+
+section .container {
+  background-color: #f4f1ec;
+}
+
+.user-image img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.user i {
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.close {
+  color: #f9897d;
+}
+
+.more-info {
+  color: var(--main-black);
+}
+
+.userName {
+  font-size: 15px;
+}
+
+.users-cards::-webkit-scrollbar {
+  height: 10px;
+}
+.users-cards::-webkit-scrollbar-thumb {
+  background-color: var(--main-orange);
+}
+.users-cards::-webkit-scrollbar-button {
+  width: 5px;
+  background-color: #333;
+}
+.users-cards::-webkit-scrollbar-track {
+  background-color: #e4e0da;
+}
+
+.add-card-icon {
+  width: 50%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-card-icon i {
+  font-size: 30px;
+}
+.add-user-card .user-content {
+  background-color: var(--main-orange);
+}
+
+.seperator::before,
+.seperator::after {
+  content: "";
+  width: calc(50% - 30px);
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d4d0da;
+}
+
+.seperator::before {
+  top: 50%;
+  left: 0;
+}
+
+.seperator::after {
+  right: 0;
+}
+
+.sign-in-form input::placeholder {
+  font-size: 14px;
+}
+
+.password-input i {
+  right: 10px;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--main-orange);
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-sign-in {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--main-blusih-black);
+  --bs-btn-border-color: var(--main-blusih-black);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #333148;
+  --bs-btn-hover-border-color: #222036;
+}
+
+.btn-new-account {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--main-orange);
+  --bs-btn-border-color: var(--main-orange);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d94e3c;
+  --bs-btn-hover-border-color: #cd4533;
+}
+
+.hint {
+  background-color: #d6282844;
+  color: #333148;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+  border-color: var(--main-light-green);
+  background-image: url("../images/valid.png");
+  background-size: 30px 30px;
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+  border-color: var(--main-light-green);
+  box-shadow: none;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  padding-right: 0;
+  background-image: url("../images/invalid.png");
+  background-size: 30px 30px;
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus {
+  box-shadow: none;
+}
+
+.login-success {
+  width: 100%;
+  height: 100%;
+  background-color: #3f3d5655;
+  left: 0;
+  top: 0;
+}
+
+.login-failed {
+  width: 100%;
+  height: 100%;
+  background-color: #3f3d5655;
+  left: 0;
+  top: 0;
+}
+
+.user-data {
+  width: fit-content;
+}
+
+.user-data i {
+  color: var(--main-orange);
+}
+
+.user-data li span {
+  color: var(--main-orange);
+}
+
+.btn-logout {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--main-blusih-black);
+  --bs-btn-border-color: var(--main-blusih-black);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #302e45;
+  --bs-btn-hover-border-color: #26243a;
+  right: 20px;
+  bottom: 20px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==== favicon ==== -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- ==== Font Awesome Library Icons ==== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ==== Bootstrap Library ==== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ==== login Stylesheet ==== -->
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <section id="login" class="login w-100">
+      <div class="container text-center py-5 px-5 rounded-4 position-relative">
+        <div class="welcome-image w-75 m-auto">
+          <img
+            src="images/sign-in.svg"
+            class="w-50 py-4"
+            alt="Join the world's largest community"
+            title="Join the world's largest community"
+          />
+        </div>
+        <div class="recent-logins w-75 text-start mx-auto d-none">
+          <h3 class="fs-4 mb-0">Recent logins</h3>
+          <div class="users-cards row overflow-auto flex-nowrap py-2">
+            <div class="user-card col-md-2 p-2">
+              <div class="user-content bg-white p-2 rounded-4 text-center">
+                <div
+                  class="user-header px-1 pt-1 d-flex justify-content-between"
+                >
+                  <i class="close fa-solid fa-circle-xmark"></i>
+                  <i class="more-info fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="user-image py-2">
+                  <img
+                    src="images/avatars/avatar-male.jpg"
+                    class="w-50 h-50 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <h4 class="userName">Usama Ali</h4>
+              </div>
+            </div>
+            <div class="user-card col-md-2 p-2">
+              <div class="user-content bg-white p-2 rounded-4 text-center">
+                <div
+                  class="user-header px-1 pt-1 d-flex justify-content-between"
+                >
+                  <i class="close fa-solid fa-circle-xmark"></i>
+                  <i class="more-info fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <div class="user-image py-2">
+                  <img
+                    src="images/avatars/avatar-female.jpg"
+                    class="w-50 h-50 rounded-circle"
+                    alt=""
+                  />
+                </div>
+                <h4 class="userName">Merna Waleed</h4>
+              </div>
+            </div>
+            <div class="add-user-card col-md-2 p-2 text-white">
+              <div
+                class="user-content h-100 d-flex flex-column justify-content-between align-items-center p-2 rounded-4 text-center"
+              >
+                <div class="add-card-icon mt-3">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <h4 class="userName">Add Account</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="seperator position-relative py-2 d-none">OR</h4>
+        <div class="sign-in-form w-75 mx-auto">
+          <div class="login-inputs d-flex">
+            <div class="email w-100 me-3">
+              <div class="email-hint w-100">
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  class="form-control p-2"
+                />
+              </div>
+            </div>
+            <div class="password w-100">
+              <div class="password-input w-100 position-relative">
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  class="form-control p-2"
+                />
+                <i
+                  class="show-hide-password fa-solid fa-eye position-absolute top-50 translate-middle-y d-none"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="login-buttons py-4 d-flex flex-column w-50 mx-auto gap-4">
+            <button class="btn btn-sign-in rounded-2 py-2">Sign in</button>
+            <button class="btn btn-new-account rounded-2 py-2">
+              Create New Account
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="login-failed position-absolute d-flex justify-content-center align-items-center d-none"
+      >
+        <div class="box bg-white rounded-4 p-3 w-40 text-center">
+          <img src="images/failed.svg" alt="Login Failed" class="w-50 py-3" />
+          <h3>Login Failed</h3>
+          <p>Invalid Email or Password</p>
+          <button class="btn btn-sign-in">Try Again</button>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Main Js File ===== -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
