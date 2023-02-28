@@ -36,12 +36,12 @@ function validate(element, regex) {
   if (regex.test(element.value)) {
     hint.classList.remove("visible");
     hint.classList.add("invisible");
-    return true;
   } else {
     hint.classList.remove("invisible");
     hint.classList.add("visible");
-    return false;
   }
+
+  return regex.test(element.value);
 }
 
 function showPassword() {
@@ -108,7 +108,7 @@ function createAccount() {
   let page = location.pathname;
   if (page == "/index.html") {
     location.pathname = "/sign-up.html";
-  } else if ((page = "/sign-up.html")) {
+  } else if (page == "/sign-up.html") {
     if (
       validate(firstName, regexName) &&
       validate(lastName, regexName) &&
@@ -125,11 +125,6 @@ function createAccount() {
       localStorage.setItem("users", JSON.stringify(users));
       loginSuccessBox.classList.remove("d-none");
       emptyInputFields();
-    } else {
-      validate(firstName, regexName);
-      validate(lastName, regexName);
-      validate(emailInput, regexEmail);
-      validate(passwordInput, regexPass);
     }
   }
 }
